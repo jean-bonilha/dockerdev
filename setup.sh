@@ -1,4 +1,5 @@
 #!/bin/bash
 cd ~/.vim/bundle/coc.nvim/ && yarn
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-cd ~ && dotfiles config --local status.showUntrackedFiles no && dotfiles reset HEAD . && dotfiles checkout -- . && cd - && clear
+cd ~ && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME config --local status.showUntrackedFiles no
+cd ~ && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME reset HEAD .
+cd ~ && /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout -- .
