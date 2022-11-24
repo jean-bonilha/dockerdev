@@ -13,4 +13,6 @@ cp $HOME/.tmux/.tmux.conf.local $HOME && \
 cd ~/.vim && \
 git checkout heavenly2 && \
 git submodule init && \
-git submodule update
+git submodule update && \
+cd ~/.vim/bundle/coc.nvim && \
+$NVM_BIN/yarn && \
